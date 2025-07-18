@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		595CE5132E2A73DD004DE94A /* FlatBuffers in Frameworks */ = {isa = PBXBuildFile; productRef = 595CE5122E2A73DD004DE94A /* FlatBuffers */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		595CE4F72E2A7357004DE94A /* FlatBuffersMemoryNotReleasing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlatBuffersMemoryNotReleasing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595CE5132E2A73DD004DE94A /* FlatBuffers in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = FlatBuffersMemoryNotReleasing;
 			packageProductDependencies = (
+				595CE5122E2A73DD004DE94A /* FlatBuffers */,
 			);
 			productName = FlatBuffersMemoryNotReleasing;
 			productReference = 595CE4F72E2A7357004DE94A /* FlatBuffersMemoryNotReleasing.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = 595CE4EE2E2A7357004DE94A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				595CE5112E2A73DD004DE94A /* XCRemoteSwiftPackageReference "flatbuffers" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 595CE4F82E2A7357004DE94A /* Products */;
 			projectDirPath = "";
@@ -337,6 +346,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		595CE5112E2A73DD004DE94A /* XCRemoteSwiftPackageReference "flatbuffers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/flatbuffers.git";
+			requirement = {
+				kind = exactVersion;
+				version = 25.2.10;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		595CE5122E2A73DD004DE94A /* FlatBuffers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 595CE5112E2A73DD004DE94A /* XCRemoteSwiftPackageReference "flatbuffers" */;
+			productName = FlatBuffers;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 595CE4EF2E2A7357004DE94A /* Project object */;
 }
