@@ -37,6 +37,8 @@ class ViewController: UIViewController {
         ])
     }
     
+    private var b: FlatBufferBuilder? = FlatBufferBuilder()
+    
     @objc func runFlatBuffersTest() {
         // Minimal reproducible FlatBuffers serialization
         var accs: [ACC] = []
@@ -45,7 +47,6 @@ class ViewController: UIViewController {
             accs.append(ACC(reqId: "id\(i)", ms: Double(i), x: Double(i), y: Double(i), z: Double(i)))
         }
         
-        var b: FlatBufferBuilder? = FlatBufferBuilder()
         var offsets = [Offset]()
         offsets.reserveCapacity(accs.count)
         for acc in accs {
